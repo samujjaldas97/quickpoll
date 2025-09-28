@@ -26,7 +26,7 @@ WORKDIR /app
 
 # Copy the packaged .jar file from the 'builder' stage
 # The path is inside the target folder of the builder stage
-COPY --from=builder /app/target/quickpoll-backend-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/quickpoll-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port the application runs on
 EXPOSE 8080
